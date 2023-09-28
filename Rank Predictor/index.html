@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Predictor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class="fa-sharp fa-solid fa-pen-fancy"></i>Rankers!</a>
+        <nav class="navbar">
+            <a href="active" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact us">CONTACT US</a>
+            <a href="#Rank List">RANK LIST</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"> </i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="SignupLogin\signuplogin.html" class="fas fa-user-circle"></a>
+        </div>
+    </header>
+    <form action="" id="search-form">
+        <input type="search" placeholder="seacrh here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-seacrh"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Trendings</span>
+                        <h3>IIT Delhi</h3>
+                        <p>IIT Delhi, officially Indian Institute of Technology Delhi, is a public institute of
+                            technology located in New Delhi, India. It is one of the 23 Indian Institutes of Technology
+                            created to be Centres of Excellence for India's training, research and development in
+                            science, engineering and technology.</p>
+                        <a href="#" class="btn">Rank</a>
+                    </div>
+                    <div class="image">
+                        <img src="/img/gallery-lg1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Trendings</span>
+                        <h3>BITS Pilani</h3>
+                        <p>Birla Institute of Technology & Science, Pilani (BITS Pilani) is a deemed university in
+                            Pilani, Jhunjhunu, India.[12] It focuses primarily on higher education and research in
+                            engineering and sciences.[13] After expansion to a campus in Dubai, it has become the first
+                            international deemed university, spearheading in science, engineering, management and
+                            research with five established campuses and 15 academic departments.</p>
+                        <a href="#" class="btn">Rank</a>
+                    </div>
+                    <div class="image">
+                        <img src="/img/2019-3-3--0-46-32-245_43375021_2258639734354556_1707337409550614528_n.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Trendings</span>
+                        <h3>IIT Kanpur</h3>
+                        <p>Indian Institute of Technology Kanpur (IIT Kanpur) is a public institute of technology
+                            located in Kanpur, Uttar Pradesh, India. It was declared to be an Institute of National
+                            Importance by the Government of India under the Institutes of Technology Act.
+
+                            The institution was established in 1959. As one of the first Indian Institutes of
+                            Technology, the institute was created with the assistance of a consortium of nine US
+                            research universities as part of the Kanpur Indo-American Programme (KIAP).</p>
+                        <a href="#" class="btn">Rank</a>
+                    </div>
+                    <div class="image">
+                        <img src="/img/p3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <section>
+    
+            <style>
+                /* Add some general styling for the form */
+                form {
+                    width: 50%;
+                    /* Set the width of the form */
+                    margin: 0 auto;
+                    /* Center the form on the page */
+                    padding: 20px;
+                    /* Add some padding to the form */
+                    font-size: 20px;
+                    background-color: #45bec2;
+
+                }
+
+                /* Style the label and input elements within the form */
+                label,
+                input {
+                    display: block;
+                    /* Display the elements as blocks */
+                    margin-bottom: 10px;
+                    /* Add some margin to the bottom of the elements */
+                }
+
+                /* Style the input elements */
+                input {
+                    width: 100%;
+                    /* Set the width of the input elements to 100% */
+                    padding: 10px;
+                    /* Add some padding to the input elements */
+                }
+
+                /* Style the submit button */
+                input[type="submit"] {
+                    background-color: #4caf54;
+                    /* Set the background color of the button */
+                    color: white;
+                    /* Set the text color of the button */
+                    padding: 14px 20px;
+                    /* Add some padding to the button */
+                    border: none;
+                    /* Remove the border */
+                    cursor: pointer;
+                    /* Add a cursor pointer */
+                }
+
+                /* Style the submit button on hover */
+                input[type="submit"]:hover {
+                    background-color: #16aea9;
+                    /* Change the background color on hover */
+                }
+
+                .wrapper {
+                    display: flex;
+                    width: 100%;
+                    justify-content: start;
+                    align-items: center;
+                }
+            </style>
+       
+
+        
+            <div class="wrapper">
+                <form method="POST" action="/result">
+                    <div>
+                        <label for="Your Name">Your name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="Your Current Jee Mains Score">Your Current Jee Mains Score</label>
+                        <input type="number" id="mainsscore" name="mainsrank">
+                    </div>
+                    <div>
+                        <label for="Your Current Jee Advanced Score">Your Current Jee Advanced Score</label>
+                        <input type="text" id="advscore" name="advrank">
+                    </div>
+                    <div>
+                        <label for="Your Category">Your Category</label>
+                        <input type="text" id="yourcategory" name="yourcategory">
+                    </div>
+                    <div>
+                        <input type="Submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+
+        
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
